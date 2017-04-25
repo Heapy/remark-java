@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/Heapy/remark-java.svg?branch=master)](https://travis-ci.org/Heapy/remark-java)
+[![Build Status](https://travis-ci.org/Heapy/remark-kotlin.svg?branch=master)](https://travis-ci.org/Heapy/remark-kotlin)
 
 
 # OverZealous Creations Remark
