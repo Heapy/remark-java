@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/giflw/remark-java.svg?branch=master)](https://travis-ci.org/giflw/remark-java)
+[![Build Status](https://travis-ci.org/Heapy/remark-java.svg?branch=master)](https://travis-ci.org/Heapy/remark-java)
 
 
 # OverZealous Creations Remark
