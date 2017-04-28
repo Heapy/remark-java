@@ -1,6 +1,6 @@
 // Remark is a library for taking (X)HTML input and outputting clean Markdown, Markdown Extra, or MultiMarkdown compatible text.
 setGroup("by.heap.remark")
-setVersion("1.2.0")
+setVersion("1.2.0-SNAPSHOT")
 
 buildscript {
     ext {

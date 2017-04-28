@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/Heapy/remark-kotlin.svg?branch=master)](https://travis-ci.org/Heapy/remark-kotlin)
+[![Build Status](https://travis-ci.org/Heapy/remark-kotlin.svg?branch=master)](https://travis-ci.org/Heapy/remark-kotlin) [![Download](https://api.bintray.com/packages/heapy/heap/remark-kotlin/images/download.svg) ](https://bintray.com/heapy/heap/remark-kotlin/_latestVersion)
 
 
 # OverZealous Creations Remark
@@ -50,6 +50,18 @@ The basic theory is that you match the extensions to your Markdown conversion li
 Want to fork this project?  *Great!*  However, please note that I use [hgflow][] to manage the develop-release cycle.  If you are uncomfortable with that, that's fine, too!  Just switch to the **develop** branch before working, or I won't be able to easily merge the changes back in.
 
 Source code build is done via [Gradle][].
+
+## Usage
+
+```kotlin
+repositories { 
+    maven { setUrl("http://dl.bintray.com/heapy/heap") } 
+} 
+
+dependencies {
+    compile("by.heap.remark:remark-kotlin:1.2.0")
+}
+```
 
 ## Dependencies
 
