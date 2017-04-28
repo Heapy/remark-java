@@ -1,0 +1,43 @@
+// Remark is a library for taking (X)HTML input and outputting clean Markdown, Markdown Extra, or MultiMarkdown compatible text.
+setGroup("by.heap.remark")
+setVersion("1.1.1")
+
+buildscript {
+    ext {
+        kotlinVersion = "1.1.2"
+        junitVersion = "5.0.0-M4"
+        junitPlatformVersion = "1.0.0-M4"
+    }
+    repositories {
+        jcenter()
+    }
+
+    dependencies {
+        classpath("org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlinVersion")
+        classpath("org.junit.platform:junit-platform-gradle-plugin:$junitPlatformVersion")
+    }
+}
+
+apply plugin: "kotlin"
+apply plugin: "org.junit.platform.gradle.plugin"
+
+repositories {
+    jcenter()
+}
+
+dependencies {
+    compileOnly("org.jetbrains.kotlin:kotlin-stdlib:$kotlinVersion")
+    compile("org.jsoup:jsoup:1.6.3")
+    compile("org.apache.commons:commons-lang3:3.4")
+
+    // needed to use command line utility
+    compileOnly("commons-cli:commons-cli:1.2")
+
+    testCompile("commons-io:commons-io:2.4")
+    testCompile("org.junit.jupiter:junit-jupiter-engine:$junitVersion")
+}
+
+task wrapper(type: Wrapper) {
+    gradleVersion = "3.5"
+    distributionUrl = "http://services.gradle.org/distributions/gradle-${gradleVersion}-bin.zip"
+}
