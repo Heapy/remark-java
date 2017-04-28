@@ -55,7 +55,7 @@ Source code build is done via [Gradle][].
 
 ```kotlin
 repositories { 
-    maven { setUrl("http://dl.bintray.com/heapy/heap") } 
+    maven { setUrl("https://dl.bintray.com/heapy/heap") } 
 } 
 
 dependencies {
